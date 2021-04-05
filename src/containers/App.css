@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Robot Roc Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Robot Roc Regular'), url('./RobotRoc-8X2A.woff') format('woff');
+    }
+    
+
+
+
+
+    h1 {
+        font-family: 'Robot Roc Regular';
+        font-weight: 200;
+        color: white;
+
+    }
