@@ -1,6 +1,5 @@
 import React from 'react';
 import CardList from '../components/CardList';
-// import { robots } from './robots';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/scroll';
 import '../containers/App.css';
@@ -13,6 +12,7 @@ class App extends React.Component {
         this.state = {
             robots: [],
             searchfield: '',
+            id: ''
         }
 
     }
