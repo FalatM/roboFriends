@@ -27,10 +27,22 @@ function App() {
 
     
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(response => response.json())
-            .then(users => {setRobots(users)});
+        getData()
     },[])
+
+
+    // const getData = () => {
+    //     fetch('https://jsonplaceholder.typicode.com/users')
+    //         .then(response => response.json())
+    //         .then(users => {setRobots(users)});
+    // }
+
+    async function getData() {
+        const res = await fetch('https://jsonplaceholder.typicode.com/users');
+        const users = await res.json();
+        console.log(users)
+        setRobots(users)
+      }
 
     const onSearchChange = (event) => {
         setSearchfield(event.target.value)
